@@ -1,0 +1,9 @@
+streamlit
+streamlit-aggrid
+requests
+matplotlib
+seaborn
+plotly
+pandas
+
+

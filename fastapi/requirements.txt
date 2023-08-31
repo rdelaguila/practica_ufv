@@ -1,0 +1,4 @@
+pydantic==1.10.4
+fastapi
+pandas
+

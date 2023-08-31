@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  
+  fastapi:
+    build: fastapi/
+    ports:
+      - 8000:8000
+    networks:
+      - deploy_network
+    container_name: fastapi
+    volumes:
+      - mis_datos:/var/lib/docker/volumes/aa-streamlit-fastapi_mis_datos/_data
+  streamlit:
+    build: streamlit/
+    depends_on:
+      - fastapi
+    ports:
+        - 8501:8501
+    networks:
+      - deploy_network
+    container_name: streamlit
+    volumes:
+      - mis_datos:/var/lib/docker/volumes/aa-streamlit-fastapi_mis_datos/_data
+networks:
+  deploy_network:
+    driver: bridge
+    
+volumes:
+   mis_datos:
