@@ -7,7 +7,7 @@
     
     Ojo, este ejemplo es un punto de partida para vosotros, pero ni es visual, ni cuenta una historia. Lo siento, pero os pido mucho más.
     
-    Lo he montado como un dashboard con multiapp. Las páginas están bajo el directorio `pages`. Si quieeres añadir más páginas, añade más páginas. Pero 
+    Lo he montado como un dashboard con multiapp. Las páginas están bajo el directorio `pages`. Si quieres añadir más páginas, añade más páginas. Pero 
     también podrías montar un dashboard sin necesidad de que sea multipágina. 
     
     En la página principal voy a volcar todo el contenido de un dataframe. Esto no debería hacerse así, sobretodo si el conjunto de datos es muy grande. 
