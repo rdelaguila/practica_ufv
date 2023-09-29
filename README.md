@@ -15,6 +15,7 @@
     ya hemos visto que una arquitectura basada en microservicios tiene ciertas ventajas sobre  una app monolítica.
     
     Además, os he subido un par de presentaciones dentro de la carpeta 'doc' y código para que veais cómo se usa sqlalchemy dentro de la carpeta sqlalchemy.
+    De esta documentación, nosotros veremos en clase la presentación de introducción a los contenedores.
 
     La práctica os la voy a evaluar del siguiente modo:
     
