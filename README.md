@@ -11,9 +11,11 @@
     también podrías montar un dashboard sin necesidad de que sea multipágina. 
     
     En la página principal voy a volcar todo el contenido de un dataframe. Esto no debería hacerse así, sobretodo si el conjunto de datos es muy grande. 
-    Es más, puedes gestionar datos desde `streamlit` (app monolítica=, pero
+    Es más, puedes gestionar datos desde `streamlit` (app monolítica), pero
     ya hemos visto que una arquitectura basada en microservicios tiene ciertas ventajas sobre  una app monolítica.
     
+    Además, os he subido un par de presentaciones dentro de la carpeta 'doc' y código para que veais cómo se usa sqlalchemy dentro de la carpeta sqlalchemy.
+
     La práctica os la voy a evaluar del siguiente modo:
     
     1. Para tener un apto (5) deberéis buscar un conjunto de datos, documentarlo, y hacer un dashboard. La nota puede llegar a 6 en función de 
