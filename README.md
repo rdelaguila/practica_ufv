@@ -17,6 +17,10 @@
     Además, os he subido un par de presentaciones dentro de la carpeta 'doc' y código para que veais cómo se usa sqlalchemy dentro de la carpeta sqlalchemy.
     De esta documentación, nosotros veremos en clase la presentación de introducción a los contenedores.
 
+    La fecha límite de entrega de la práctica es el viernes 15 de diciembre 23:59 horas.
+    Tendréis que hacer un fork del repositorio y crear una carpeta con vuestro nombre donde esté el código e instrucciones de ejecución de vuestra práctica, así
+    como una memoria exponiendo lo que se ha realizado, la fuente de datos y qué se pretende analizar. La entrega se hará mediante pull request.  
+
     La práctica os la voy a evaluar del siguiente modo:
     
     1. Para tener un apto (5) deberéis buscar un conjunto de datos, documentarlo, y hacer un dashboard. La nota puede llegar a 6 en función de 
