@@ -1,9 +1,9 @@
-streamlit
-streamlit-aggrid
-requests
-matplotlib
-seaborn
-plotly
-pandas
+streamlit==1.26.0
+streamlit-aggrid==0.3.4.post3
+requests==2.31.0
+matplotlib==3.7.2
+seaborn==0.12.2
+plotly==5.16.1
+pandas==2.1.0
 
 
