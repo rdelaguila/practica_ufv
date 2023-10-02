@@ -1,8 +1,0 @@
-streamlit
-streamlit-aggrid
-requests
-matplotlib
-seaborn
-pandas
-
-
