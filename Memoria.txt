@@ -1,0 +1,13 @@
+Alexander Laugesen Rejón
+Con este dashboard creado mi intención es ver la relación entre el gasto en salarios de los quipos de la NFL (Liga
+Nacional de Fútbol Americano) para ello primero encontre el set de datos llamado NFL.csv en el que se muestran los
+salarios pagados por los equipos por posición. Después cree un fork del repositorio y lo copié en mi terminal,
+posteriormente cree mi dashboard en el que empiezo contando varios datos interesantes y luego procedo a introducir
+tablas y gráficas que considero relevantes hacia mi estudio, cada una de estas gráficas las acompaño con un breve
+comentario acerca de las mismas para poder entender mejor los resultados graficados. Al terminar mi dashboard solo
+faltaba incluirlo en docker y por tanto elimine los dos dashboards que habías creado e incluí el mío seguido de la
+modificación del archivo server.py para satisfacer mis necesidades. Finalmente, cuando ya tenia todo listo hice un
+commit de los cambios que habia realizado seguido de un push para que se viese reflejado en github. Por último cree esta
+memoria.
+Para correr el código lo único que hay que hacer es en la terminal hacer un 'docker compose up' y luego en el navegador
+poner localhost:8501 y aparecera mi dashboard.
