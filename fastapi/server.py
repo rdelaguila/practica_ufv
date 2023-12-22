@@ -12,35 +12,29 @@ class BaseModel(PydanticBaseModel):
     class Config:
         arbitrary_types_allowed = True
 
-class Contrato(BaseModel):
-    #titulo:str
-    #autor:str
-    #pais:str
-    #genero:str
-    fecha:str
-    centro_seccion:str
-    nreg:str
-    nexp:str
-    objeto:str
-    tipo:str
-    procedimiento:str
-    numlicit:str
-    numinvitcurs:str
-    proc_adjud:str
-    presupuesto_con_iva:str
-    valor_estimado:str
-    importe_adj_con_iva:str
-    adjuducatario:str
-    fecha_formalizacion:str
-    I_G:str
+class Salaries(BaseModel):
+    QB:int
+    RB:int
+    WR:int
+    TE:int
+    OL:int
+    Offense:int
+    IDL:int
+    EDGE:int
+    LB:int
+    S:int
+    CB:int
+    Defense:int
+    Team:str
+    Year:int
 
 
-class ListadoContratos(BaseModel):
-    contratos = List[Contrato]
+class SalaryList(BaseModel):
+    salaries = List[Salaries]
 
 app = FastAPI(
-    title="Servidor de datos",
-    description="""Servimos datos de contratos, pero podríamos hacer muchas otras cosas, la la la.""",
+    title="NFL",
+    description="""Análisis de la relación entre el gasto en salarios y el éxito en la NFL""",
     version="0.1.0",
 )
 
@@ -48,9 +42,9 @@ app = FastAPI(
 @app.get("/retrieve_data/")
 #def insercion_endpoint (titulo:str = Form(...), autor:str=Form(...), pais:str=Form(...),genero:str=File(...),  archivo: UploadFile=File(...)):
 def retrieve_data ():
-    todosmisdatos = pd.read_csv('./contratos_inscritos_simplificado_2023.csv',sep=';')
+    todosmisdatos = pd.read_csv('nfl.csv', sep=',')
     todosmisdatos = todosmisdatos.fillna(0)
     todosmisdatosdict = todosmisdatos.to_dict(orient='records')
-    listado = ListadoContratos()
-    listado.contratos = todosmisdatosdict
+    listado = SalaryList()
+    listado.salaries = todosmisdatosdict
     return listado
